@@ -1,4 +1,4 @@
-SphinxConfiguratorBuilder
+SphinxConfigBuilder
 =========================
 
 A php class to build the sphinx search configuration file dynamically from php.
@@ -11,9 +11,9 @@ or environments. You finally duplicate this file and loosing the control of the 
 
 With SphinxConfiguratorBuilder you could achieve 2 important goals:
 
-1) the sphinx configuration is part of the core of your app.
+1) using SphinxConfigBuilder now the sphinx configuration is part of the code of your application.
 
-2) you could generate sphinx configurations dinamically: differents db confs, dev environment or prod...
+2) you could generate sphinx configurations dinamically: differents db confs, dev environment or prod, automatize, add to CI flows, smoke tests, etc...
 
 
 How to use it?
@@ -32,3 +32,7 @@ now simply run:
 or 
 
     searchd --config /path/to/config_sample.php
+    
+    
+Inspired by this cpan module in perl : https://metacpan.org/pod/Sphinx::Config::Builder
+
