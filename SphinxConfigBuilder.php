@@ -2,6 +2,7 @@
 class SphinxConfigBuilder
 {
     private  $types;
+    private  $config;
 
     public function __construct(){
         $this->types = array('source', 'index');
@@ -17,7 +18,7 @@ class SphinxConfigBuilder
 
     public function addEntry( $type,  $name, $array){
         if(!in_array( $type, $this->types ) ){
-            die('ERROR:Entry type should be "source" or "index"');
+            die('ERROR:addEntry $type param should be "source" or "index"');
         }
         else {
             $this->config[$type][$name] = $array;
@@ -31,7 +32,7 @@ class SphinxConfigBuilder
     public function output(){
         foreach ( $this->config as $k => $v ){
             if( in_array ($k, $this->types)){
-                //iterate again because could be more than one source or index
+                //iterate deeper because could have more than one source or index
                 foreach ( $v as $k_entry => $v_entry  ){
                     echo "$k\t$k_entry\t";
                     echo "\n{\n";
