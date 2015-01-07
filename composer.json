@@ -1,0 +1,15 @@
+{
+    "name": "jipipayo/sphinx-config-builder",
+    "description": "A php class to build the sphinx search configuration file dynamically.",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Dani Remeseiro",
+            "email": "jipipayo@cpan.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

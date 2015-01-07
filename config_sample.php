@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 include_once 'SphinxConfigBuilder.php';
 $builder = new SphinxConfigBuilder();
