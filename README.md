@@ -14,10 +14,12 @@ With SphinxConfiguratorBuilder you create sphinx configurations dinamically: dif
 <h3>Install</h3>
 You can install with composer: https://getcomposer.org/
 Simply add this line to your composer.json (required section):
+
         "jipipayo/sphinx-config-builder": "dev-master"
-run:
+update your composer modules in your project:
+
     composer update
-and you can start to use this class.
+this will download and install this class and you are ready to start to use it.
 
 
 <h3>How to use it?</h3>
