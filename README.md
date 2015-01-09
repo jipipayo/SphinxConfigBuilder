@@ -9,6 +9,9 @@ Sphinx search (http://sphinxsearch.com/) usually works well with a simple plain 
 But sometimes in big projects you have to handle with this file that starts to grow, and run in different machines
 or environments. You finally duplicate this file and loosing the control of the real state of this changes.
 
+Readed this tweet and gave me the idea to pass a file on the fly as configuration:
+https://twitter.com/pda/status/7368710004154368
+
 With SphinxConfiguratorBuilder you create sphinx configurations dinamically: differents db confs, dev environment or prod, automatize, add to CI flows, smoke tests, etc...
 
 <h3>Install</h3>
