@@ -32,7 +32,7 @@ class SphinxConfigBuilder
     public function output(){
         foreach ( $this->config as $k => $v ){
             if( in_array ($k, $this->types)){
-                //iterate deeper because could have more than one source or index
+                //iterate again because could be more than one source or index
                 foreach ( $v as $k_entry => $v_entry  ){
                     echo "$k\t$k_entry\t";
                     echo "\n{\n";
