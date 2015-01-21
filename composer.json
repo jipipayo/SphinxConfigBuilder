@@ -2,6 +2,7 @@
     "name": "jipipayo/sphinx-config-builder",
     "type": "library",
     "description": "A php class to build the sphinx search configuration file dynamically.",
+    "keywords": ["sphinx", "configuration"],
     "license": "MIT",
     "authors": [
         {
