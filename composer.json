@@ -14,6 +14,9 @@
     "require": {
         "php": ">=5.3.0"
     },
+     "suggest": {
+        "neutron/sphinxsearch-api": "Allows to use sphinx via official (by Andrew Aksyonoff) php Sphinx api"
+    },
     "autoload": {
         "psr-0": {
             "SphinxConfigBuilder": "lib"
