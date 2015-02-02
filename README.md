@@ -40,8 +40,20 @@ now simply run:
   
 or 
 
-    searchd --config /path/to/config_sample.php
+    searchd --config /absolute/path/to/config_sample.php
     
+    
+if you make a symlink like this:
+
+        ln -s /absolute/path/to/config_sample.php /usr/local/etc/sphinx.conf
+        
+        
+        
+now you will be able to use indexer and searchd without --config path (sphinx now takes the default /usr/local/etc/sphinx.conf) 
+
+        indexer  --all --rotate
+
+  
     
 Inspired by this cpan module in perl : https://metacpan.org/pod/Sphinx::Config::Builder
 
