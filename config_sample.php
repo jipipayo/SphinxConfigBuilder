@@ -34,7 +34,7 @@ $src_sample_arr = Array(
         'sql_query'             => 'SELECT `id`,`foo` ,`score`,`summary` FROM tablewadus;',
         'sql_attr_uint'         => 'score',
     );
-$builder->addEntry('source', 'sample', $src_vulns_arr);
+$builder->addEntry('source', 'sample', $src_sample_arr);
 
 
 $idx_sample_arr = Array(
